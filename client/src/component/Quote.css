@@ -1,0 +1,221 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.quote-box {
+    background: linear-gradient(145deg, #625fe0, #915fe8);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), inset 0 0 10px rgba(255, 255, 255, 0.2); 
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.quote-text {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.quote-author {
+    font-size: 1.4rem;
+    font-style: italic;
+    font-family: 'Space Grotesk';
+    color: #ecd5d5;
+}
+
+.quote-time {
+    font-size: 0.9rem;
+    color: #d1d1d1;
+}
+
+.whatsapp-share {
+    background-color: #25d366;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp-share:hover {
+    background-color: #22b558;
+}
+
+.whatsapp-icon {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.new-quote-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: -35px; /* Positioned below the quote box */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.new-quote-btn:hover {
+    background-color: #45a049;
+}
+
+.plus-icon {
+    font-size: 1.5rem;
+    margin-right: 8px;
+}
+
+
+
+
+.floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.floating-button {
+    background-color: #4caf50; 
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.floating-button:hover {
+    background-color: #45a049;
+}
+
+
+.whatsapp-button {
+    background-color: #25d366;
+}
+
+.add-quote-button {
+    background-color: #007bff;
+}
+
+.refresh-button {
+    background-color: #ff9800;
+}
+
+
+.modal-content {
+    background: linear-gradient(145deg, #625fe0, #915fe8); 
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box; 
+}
+
+textarea,
+input {
+    width: 100%;
+    padding: 15px; 
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    padding-right: 15px; 
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-new{
+    font-family: 'Playwrite AU SA'; 
+    font-size: 1.5rem;
+}
+
+.submit-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.get-buddy{
+    font-family: 'Playwrite AU SA'; 
+    font-size: 2rem;
+}
