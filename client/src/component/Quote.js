@@ -14,7 +14,7 @@ const Quote = () => {
     // Fetch random quote from API
     const fetchRandomQuote = async () => {
         try {
-            const response = await fetch('http://localhost:5000/api/quotes/random');
+            const response = await fetch('https://randomq.onrender.com/api/quotes/random');
             const data = await response.json();
             setQuoteData({
                 quote: data.quote,
@@ -38,7 +38,7 @@ const Quote = () => {
         e.preventDefault();
         if (newQuote.quote && newQuote.author) {
             try {
-                const response = await fetch('http://localhost:5000/api/quotes', {
+                const response = await fetch('https://randomq.onrender.com/api/quotes', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
